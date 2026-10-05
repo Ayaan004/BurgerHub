@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Burger Hub - Fast, Fresh, Delicious. Order your favorite burgers, fries, pizza, and more. Fast delivery at your doorstep.">
+    <title>Burger Hub | Fast, Fresh, Delicious</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-hamburger"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">BURGER HUB</span>
+                    <span class="logo-tagline">FAST. FRESH. DELICIOUS.</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#menu" class="nav-link">MENU</a></li>
+                <li><a href="#offers" class="nav-link">OFFERS</a></li>
+                <li><a href="#about" class="nav-link">ABOUT US</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <a href="#" class="order-btn" id="orderBtn">
+                ORDER ONLINE
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Cravings, Satisfied</p>
+                <h1 class="hero-title">
+                    <span class="title-white">GOOD FOOD</span>
+                    <span class="title-yellow">FAST & FRESH</span>
+                </h1>
+                <p class="hero-desc">Delicious fast food made with quality ingredients, served hot and fresh to satisfy
+                    your cravings.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn-order-now">
+                        ORDER NOW
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn-watch-video" id="watchVideoBtn">
+                        <span class="play-icon">
+                            <i class="fas fa-play"></i>
+                        </span>
+                        WATCH VIDEO
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-wrapper">
+                    <img src="images/main2.png" alt="Burger Hub Gourmet Combo" class="main-burger-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="feature-text">
+                    <strong>FAST DELIVERY</strong>
+                    <span>At Your Doorstep</span>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="feature-text">
+                    <strong>BEST QUALITY</strong>
+                    <span>Fresh Ingredients</span>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div class="feature-text">
+                    <strong>GREAT OFFERS</strong>
+                    <span>On Every Order</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORIES SECTION ===== -->
+    <section class="categories" id="menu">
+        <div class="categories-container">
+            <div class="category-item" data-category="burgers">
+                <div class="category-icon">
+                    <i class="fas fa-hamburger"></i>
+                </div>
+                <h3>BURGERS</h3>
+                <p>Juicy & Cheesy</p>
+            </div>
+            <div class="category-item" data-category="fries">
+                <div class="category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 3L5 21h14L17 3"></path>
+                        <path d="M8 3v6"></path>
+                        <path d="M12 3v6"></path>
+                        <path d="M16 3v6"></path>
+                        <path d="M10 3v4"></path>
+                        <path d="M14 3v4"></path>
+                    </svg>
+                </div>
+                <h3>FRIES</h3>
+                <p>Crispy & Golden</p>
+            </div>
+            <div class="category-item" data-category="pizza">
+                <div class="category-icon">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <h3>PIZZA</h3>
+                <p>Hot & Delicious</p>
+            </div>
+            <div class="category-item" data-category="drinks">
+                <div class="category-icon">
+                    <i class="fas fa-glass-martini-alt"></i>
+                </div>
+                <h3>DRINKS</h3>
+                <p>Chill & Refreshing</p>
+            </div>
+            <div class="category-item" data-category="chicken">
+                <div class="category-icon">
+                    <i class="fas fa-drumstick-bite"></i>
+                </div>
+                <h3>CHICKEN</h3>
+                <p>Crispy & Spicy</p>
+            </div>
+            <div class="category-item" data-category="desserts">
+                <div class="category-icon">
+                    <i class="fas fa-ice-cream"></i>
+                </div>
+                <h3>DESSERTS</h3>
+                <p>Sweet Treats</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BESTSELLERS SECTION ===== -->
+    <section class="bestsellers" id="bestsellers">
+        <div class="bestsellers-container">
+            <p class="section-subtitle">Popular Picks</p>
+            <h2 class="section-title">OUR <span>BESTSELLERS</span></h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop"
+                            alt="Classic Cheese Burger">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">CLASSIC CHEESE BURGER</h3>
+                        <p class="product-desc">Grilled beef patty with cheese, lettuce, tomato & special sauce.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$5.49</span>
+                            <button class="add-btn" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=200&fit=crop"
+                            alt="Veggie Supreme Pizza">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">VEGGIE SUPREME PIZZA</h3>
+                        <p class="product-desc">Loaded with fresh veggies, cheese & italian herbs.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$8.99</span>
+                            <button class="add-btn" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=300&h=200&fit=crop"
+                            alt="Crispy Chicken Strips">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">CRISPY CHICKEN STRIPS</h3>
+                        <p class="product-desc">Crunchy chicken strips served with dip.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$5.99</span>
+                            <button class="add-btn" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/PERI PERI FRIES.png" alt="Peri Peri Fries">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">PERI PERI FRIES</h3>
+                        <p class="product-desc">Crispy fries tossed in peri peri seasoning.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$2.99</span>
+                            <button class="add-btn" aria-label="Add to cart">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="view-menu-btn">
+                VIEW FULL MENU
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== OFFERS SECTION ===== -->
+    <section class="offers-section" id="offers">
+        <div class="offers-container">
+            <p class="section-subtitle">Hot Deals</p>
+            <h2 class="section-title">SPECIAL <span>OFFERS</span></h2>
+            <p class="offers-intro">Grab these limited-time deals before they're gone! Fresh food, unbeatable prices.
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="offers-countdown">
+                <p class="countdown-label"><i class="fas fa-fire"></i> Offers end in:</p>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="countdown-block">
+                        <span class="countdown-num" id="countDays">02</span>
+                        <span class="countdown-unit">Days</span>
+                    </div>
+                    <span class="countdown-sep">:</span>
+                    <div class="countdown-block">
+                        <span class="countdown-num" id="countHours">14</span>
+                        <span class="countdown-unit">Hours</span>
+                    </div>
+                    <span class="countdown-sep">:</span>
+                    <div class="countdown-block">
+                        <span class="countdown-num" id="countMins">36</span>
+                        <span class="countdown-unit">Mins</span>
+                    </div>
+                    <span class="countdown-sep">:</span>
+                    <div class="countdown-block">
+                        <span class="countdown-num" id="countSecs">48</span>
+                        <span class="countdown-unit">Secs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer Cards -->
+            <div class="offers-grid">
+                <!-- Offer 1: Combo Deal -->
+                <div class="offer-card offer-card-large">
+                    <div class="offer-badge">BEST VALUE</div>
+                    <div class="offer-card-img">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&h=350&fit=crop"
+                            alt="Burger Combo Meal">
+                    </div>
+                    <div class="offer-card-content">
+                        <h3 class="offer-name">MEGA COMBO MEAL</h3>
+                        <p class="offer-desc">Classic burger + large fries + drink + dessert. The ultimate feast for
+                            one!</p>
+                        <div class="offer-pricing">
+                            <span class="offer-old-price">$18.99</span>
+                            <span class="offer-new-price">$12.99</span>
+                        </div>
+                        <div class="offer-savings">
+                            <i class="fas fa-tag"></i> You save $6.00
+                        </div>
+                        <a href="#" class="offer-grab-btn">
+                            GRAB DEAL
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card">
+                    <div class="offer-badge offer-badge-red">50% OFF</div>
+                    <div class="offer-card-img">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=250&fit=crop"
+                            alt="Double Cheese Burger">
+                    </div>
+                    <div class="offer-card-content">
+                        <h3 class="offer-name">BUY 1 GET 1 FREE</h3>
+                        <p class="offer-desc">Order any burger and get a second one absolutely free!</p>
+                        <div class="offer-pricing">
+                            <span class="offer-old-price">$10.98</span>
+                            <span class="offer-new-price">$5.49</span>
+                        </div>
+                        <a href="#" class="offer-grab-btn offer-grab-sm">
+                            GRAB DEAL <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-badge offer-badge-green">NEW</div>
+                    <div class="offer-card-img">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=250&fit=crop"
+                            alt="Family Pizza">
+                    </div>
+                    <div class="offer-card-content">
+                        <h3 class="offer-name">FAMILY PIZZA DEAL</h3>
+                        <p class="offer-desc">Large pizza + garlic bread + 2 drinks. Perfect for sharing!</p>
+                        <div class="offer-pricing">
+                            <span class="offer-old-price">$24.99</span>
+                            <span class="offer-new-price">$16.99</span>
+                        </div>
+                        <a href="#" class="offer-grab-btn offer-grab-sm">
+                            GRAB DEAL <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Offer 4 -->
+                <div class="offer-card">
+                    <div class="offer-badge">30% OFF</div>
+                    <div class="offer-card-img">
+                        <img src="images/wing bucket.png" alt="Chicken Wings Bucket">
+                    </div>
+                    <div class="offer-card-content">
+                        <h3 class="offer-name">WINGS BUCKET</h3>
+                        <p class="offer-desc">12 spicy chicken wings with 3 dipping sauces at 30% off.</p>
+                        <div class="offer-pricing">
+                            <span class="offer-old-price">$14.99</span>
+                            <span class="offer-new-price">$10.49</span>
+                        </div>
+                        <a href="#" class="offer-grab-btn offer-grab-sm">
+                            GRAB DEAL <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Offer 5 -->
+                <div class="offer-card">
+                    <div class="offer-badge offer-badge-red">HOT</div>
+                    <div class="offer-card-img">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=250&fit=crop"
+                            alt="Dessert Combo">
+                    </div>
+                    <div class="offer-card-content">
+                        <h3 class="offer-name">SWEET TREAT COMBO</h3>
+                        <p class="offer-desc">Any 2 desserts + milkshake. The perfect ending to your meal.</p>
+                        <div class="offer-pricing">
+                            <span class="offer-old-price">$11.99</span>
+                            <span class="offer-new-price">$7.99</span>
+                        </div>
+                        <a href="#" class="offer-grab-btn offer-grab-sm">
+                            GRAB DEAL <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promo Code Banner -->
+            <div class="promo-banner">
+                <div class="promo-banner-left">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h3>Have a promo code?</h3>
+                        <p>Enter your code at checkout to unlock exclusive discounts</p>
+                    </div>
+                </div>
+                <div class="promo-banner-right">
+                    <input type="text" class="promo-input" placeholder="Enter code..." id="promoInput">
+                    <button class="promo-apply-btn" id="promoApplyBtn">APPLY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DELIVERY BANNER ===== -->
+    <section class="delivery-banner">
+        <div class="banner-container">
+            <div class="banner-left">
+                <div class="alarm-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="banner-left-text">
+                    <span class="hungry-text">HUNGRY?</span>
+                    <h2>WE DELIVER<br>FAST!</h2>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="banner-right-content">
+                    <div class="discount-text">
+                        <span class="get-text">GET</span>
+                        <span class="percent-text">20<sup>%</sup></span>
+                        <span class="off-text">OFF</span>
+                    </div>
+                    <div class="order-text">
+                        <span>ON YOUR</span>
+                        <span class="first-order">FIRST ORDER</span>
+                        <div class="promo-code">WELCOME20</div>
+                    </div>
+                </div>
+                <div class="delivery-person">
+                    <i class="fas fa-motorcycle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT US SECTION ===== -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-grid">
+                <!-- Left: Image Collage -->
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=500&h=600&fit=crop"
+                            alt="Restaurant Interior">
+                    </div>
+                    <div class="about-img-float">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=250&h=200&fit=crop"
+                            alt="Chef Cooking">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-label">Years of<br>Excellence</span>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="about-content">
+                    <p class="section-subtitle">Get To Know Us</p>
+                    <h2 class="section-title about-title">OUR <span>STORY</span></h2>
+                    <p class="about-text">
+                        Founded in 2009, <strong>Burger Hub</strong> started as a small food truck in downtown New York
+                        with a simple mission — serve the freshest, most delicious burgers in the city. What began as a
+                        passion project quickly grew into a beloved brand.
+                    </p>
+                    <p class="about-text">
+                        Today, we operate across 25+ locations nationwide, staying true to our roots. Every patty is
+                        hand-pressed, every bun is freshly baked, and every meal is crafted with love. We source our
+                        ingredients from local farms to ensure quality in every bite.
+                    </p>
+
+                    <!-- Highlights -->
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4>Farm Fresh</h4>
+                                <p>Locally sourced, organic ingredients</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div>
+                                <h4>Flame Grilled</h4>
+                                <p>Cooked to perfection every time</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h4>Made with Love</h4>
+                                <p>Handcrafted recipes since 2009</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h4>Lightning Fast</h4>
+                                <p>Average delivery in 25 minutes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-order-now about-cta">
+                        LEARN MORE
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Counter -->
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Locations</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-plus">K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-utensils"></i></div>
+                    <span class="stat-number" data-target="120">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Menu Items</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-plus">.9★</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials">
+                <p class="section-subtitle">What People Say</p>
+                <h2 class="section-title">CUSTOMER <span>REVIEWS</span></h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best burgers in the city! The Classic Cheese Burger is absolutely
+                            unreal. Fresh ingredients and amazing taste every single time."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Sarah M.</strong>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Super fast delivery and the food always arrives hot. The family
+                            pizza deal is incredible value. We order every weekend!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>James L.</strong>
+                                <span>Loyal Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The peri peri fries are addictive! Great portions, fair prices, and
+                            the staff is always so friendly. Highly recommended."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Emily R.</strong>
+                                <span>Food Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <a href="#" class="footer-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">BURGER HUB</span>
+                        <span class="logo-tagline">FAST. FRESH. DELICIOUS.</span>
+                    </div>
+                </a>
+                <p>We serve delicious fast food made with the best ingredients. Enjoy your meal, your way!</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>CUSTOMER CARE</h3>
+                <ul>
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">Delivery Info</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>CONTACT US</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@burgerhub.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Food Street,<br>New York, NY 10001</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>DOWNLOAD OUR APP</h3>
+                <p class="app-desc">Get exclusive offers & order faster!</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span class="app-small">Download on the</span>
+                            <span class="app-big">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span class="app-small">GET IT ON</span>
+                            <span class="app-big">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Burger Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
